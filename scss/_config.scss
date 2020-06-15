@@ -1,0 +1,17 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background3.jpg");
+$main-font: "Dosis", sans-serif;
+
+//Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) >50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
